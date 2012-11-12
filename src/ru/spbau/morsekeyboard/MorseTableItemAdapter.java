@@ -48,17 +48,15 @@ public class MorseTableItemAdapter extends BaseAdapter{
 	public View getView(int i, View view, ViewGroup viewGroup) {
 		View row = view;
 
-		if (row != null) {
+		if (row == null) {
 			row = inflater.inflate(R.layout.table_item, null, false);
-			TextView code = (TextView)row.findViewById(R.id.morse_code);
-			TextView symbol = (TextView)row.findViewById(R.id.morse_symbol);
-			code.setText(codes.get(i));
-			symbol.setText(symbols.get(i));
 		}
-		else
-		{
-			//do nothing
-		}
+
+		TextView code = (TextView)row.findViewById(R.id.morse_code);
+		TextView symbol = (TextView)row.findViewById(R.id.morse_symbol);
+		code.setText(codes.get(i));
+		symbol.setText(symbols.get(i));
+
 
 		return row;
 	}
