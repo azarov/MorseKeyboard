@@ -25,7 +25,7 @@ import android.graphics.drawable.Drawable;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
-import com.example.android.softkeyboard.R;
+import ru.spbau.morsekeyboard.R;
 
 import java.util.ArrayList;
 import java.util.List;

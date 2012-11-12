@@ -1,7 +1,7 @@
 package ru.spbau.morsekeyboard;
 
 import android.content.Context;
-import com.example.android.softkeyboard.R;
+import ru.spbau.morsekeyboard.R;
 
 import java.lang.reflect.Field;
 import java.util.Map;

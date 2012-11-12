@@ -23,7 +23,7 @@ import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.Keyboard.Key;
 import android.inputmethodservice.Keyboard.Row;
 import android.view.inputmethod.EditorInfo;
-import com.example.android.softkeyboard.R;
+import ru.spbau.morsekeyboard.R;
 
 public class LatinKeyboard extends Keyboard {
 
