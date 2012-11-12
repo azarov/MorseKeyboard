@@ -28,6 +28,7 @@ import android.view.inputmethod.CompletionInfo;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputMethodManager;
+import ru.spbau.morsekeyboard.MorseTranslator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -80,6 +81,9 @@ public class SoftKeyboard extends InputMethodService
     @Override public void onCreate() {
         super.onCreate();
         mWordSeparators = getResources().getString(R.string.word_separators);
+        MorseTranslator mt = new MorseTranslator(this.getApplication().getApplicationContext());
+        int i = 8;
+        i++;
     }
     
     /**
