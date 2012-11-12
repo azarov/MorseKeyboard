@@ -30,10 +30,17 @@ public final class R {
         public static final int sym_keyboard_space=0x7f020005;
     }
     public static final class id {
-        public static final int keyboard=0x7f080000;
+        public static final int description=0x7f080000;
+        public static final int keyboard=0x7f080003;
+        public static final int morse_code=0x7f080004;
+        public static final int morse_symbol=0x7f080005;
+        public static final int translate_table=0x7f080002;
+        public static final int translate_table_desc=0x7f080001;
     }
     public static final class layout {
-        public static final int input=0x7f030000;
+        public static final int about=0x7f030000;
+        public static final int input=0x7f030001;
+        public static final int table_item=0x7f030002;
     }
     public static final class string {
         /**  Title for Latin keyboard  
