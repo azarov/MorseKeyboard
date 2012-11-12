@@ -36,6 +36,22 @@ public final class R {
         public static final int input=0x7f030000;
     }
     public static final class string {
+        /**  About 
+         */
+        public static final int About=0x7f070005;
+        public static final int d=0x7f070019;
+        public static final int dd=0x7f070012;
+        public static final int ddd=0x7f070014;
+        public static final int ddp=0x7f07000c;
+        public static final int ddpd=0x7f070016;
+        public static final int ddpp=0x7f07001f;
+        public static final int dp=0x7f070013;
+        public static final int dpd=0x7f070010;
+        public static final int dpdd=0x7f07001e;
+        public static final int dpdp=0x7f070008;
+        public static final int dpp=0x7f070009;
+        public static final int dppd=0x7f07001d;
+        public static final int dppp=0x7f070007;
         /**  Title for Latin keyboard  
          */
         public static final int ime_name=0x7f070000;
@@ -44,6 +60,21 @@ public final class R {
         public static final int label_go_key=0x7f070002;
         public static final int label_next_key=0x7f070003;
         public static final int label_send_key=0x7f070004;
+        public static final int p=0x7f07000a;
+        /**  Morse Code 
+         */
+        public static final int pd=0x7f070006;
+        public static final int pdd=0x7f07001c;
+        public static final int pddd=0x7f07000f;
+        public static final int pddp=0x7f070015;
+        public static final int pdp=0x7f070017;
+        public static final int pdpp=0x7f070011;
+        public static final int pp=0x7f07000e;
+        public static final int ppd=0x7f07001a;
+        public static final int ppdp=0x7f07000b;
+        public static final int ppp=0x7f070018;
+        public static final int pppd=0x7f07001b;
+        public static final int pppp=0x7f07000d;
         /**  Symbols that are commonly considered word separators in this language 
          */
         public static final int word_separators=0x7f070001;
