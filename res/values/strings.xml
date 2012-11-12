@@ -23,9 +23,38 @@
 
     <!-- Symbols that are commonly considered word separators in this language -->
     <string name="word_separators">\u0020.,;:!?\n()[]*&amp;@{}/&lt;&gt;_+=|&quot;</string>
-    
+
     <!-- Labels on soft keys -->
     <string name="label_go_key">Go</string>
     <string name="label_next_key">Next</string>
     <string name="label_send_key">Send</string>
+
+    <!-- Morse Code -->
+    <string name="pd">a</string>
+    <string name="dppp">b</string>
+    <string name="dpdp">c</string>
+    <string name="dpp">d</string>
+    <string name="p">e</string>
+    <string name="ppdp">f</string>
+    <string name="ddp">g</string>
+    <string name="pppp">h</string>
+    <string name="pp">i</string>
+    <string name="pddd">j</string>
+    <string name="dpd">k</string>
+    <string name="pdpp">l</string>
+    <string name="dd">m</string>
+    <string name="dp">n</string>
+    <string name="ddd">o</string>
+    <string name="pddp">p</string>
+    <string name="ddpd">q</string>
+    <string name="pdp">r</string>
+    <string name="ppp">s</string>
+    <string name="d">t</string>
+    <string name="ppd">u</string>
+    <string name="pppd">v</string>
+    <string name="pdd">w</string>
+    <string name="dppd">x</string>
+    <string name="dpdd">y</string>
+    <string name="ddpp">z</string>
+
 </resources>
