@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>-->
         <service
-                android:name="dotdash.DotDashIMEService"
+                android:name=".DotDashIMEService"
                 android:permission="android.permission.BIND_INPUT_METHOD" >
             <intent-filter>
                 <action android:name="android.view.InputMethod" />

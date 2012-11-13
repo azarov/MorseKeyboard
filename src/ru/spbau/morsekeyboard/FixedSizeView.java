@@ -1,4 +1,4 @@
-package dotdash;
+package ru.spbau.morsekeyboard;
 
 import android.content.Context;
 import android.util.AttributeSet;

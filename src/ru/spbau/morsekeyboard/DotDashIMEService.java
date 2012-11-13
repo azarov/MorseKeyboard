@@ -1,4 +1,4 @@
-package dotdash;
+package ru.spbau.morsekeyboard;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -13,7 +13,6 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.ExtractedText;
 import android.view.inputmethod.ExtractedTextRequest;
-import ru.spbau.morsekeyboard.R;
 
 import java.util.Hashtable;
 import java.util.List;

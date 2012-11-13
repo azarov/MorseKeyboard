@@ -1,4 +1,4 @@
-package dotdash;
+package ru.spbau.morsekeyboard;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;

@@ -1,4 +1,4 @@
-package dotdash;
+package ru.spbau.morsekeyboard;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -7,15 +7,18 @@ import android.inputmethodservice.KeyboardView;
 import android.util.AttributeSet;
 import android.view.*;
 import android.widget.TextView;
-import ru.spbau.morsekeyboard.R;
 
-public class DotDashKeyboardView extends KeyboardView {
+public class DotDashKeyboardView extends KeyboardView implements View.OnTouchListener{
 
 	private DotDashIMEService service;
 	private Dialog cheatsheetDialog;
 	private View cheatsheet1;
 	private View cheatsheet2;
 	private int mSwipeThreshold;
+
+	private long startTime;
+	private long endTime;
+	private MorseDurationResolver morseDurationResolver;
 	
 	private char code;
 
@@ -31,6 +34,11 @@ public class DotDashKeyboardView extends KeyboardView {
 
 	public DotDashKeyboardView(Context context, AttributeSet attrs) {
 		super(context, attrs);
+
+		startTime = 0;
+		endTime = 0;
+		morseDurationResolver = new MorseDurationResolver(300L);
+
 		setEverythingUp();
 	}
 
@@ -106,15 +114,27 @@ public class DotDashKeyboardView extends KeyboardView {
 
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
-				code = genCode();
+				int action = event.getAction();
+
+				switch (action)
+				{
+					case MotionEvent.ACTION_DOWN:
+						startTime = System.currentTimeMillis();
+						endTime = startTime;
+						break;
+					case MotionEvent.ACTION_UP:
+						endTime = System.currentTimeMillis();
+						code = morseDurationResolver.onRelease(endTime - startTime);
+						break;
+					default:
+						code = morseDurationResolver.getSymbolFromDuration(endTime - startTime);
+						break;
+				}
+
 				return gestureDetector.onTouchEvent(event);
 			}
 		};
 		setOnTouchListener(gestureListener);
-	}
-
-	private char genCode(){
-		return '-';
 	}
 	
 	public char getCode(){
@@ -210,5 +230,30 @@ public class DotDashKeyboardView extends KeyboardView {
 			return KBD_UTILITY;
 		} else
 			return KBD_NONE;
+	}
+
+	@Override
+	public boolean onTouch(View view, MotionEvent motionEvent) {
+		int action = motionEvent.getAction();
+		Character c = 0;
+
+		switch (action)
+		{
+			case MotionEvent.ACTION_DOWN:
+				startTime = System.currentTimeMillis();
+				endTime = startTime;
+				break;
+			case MotionEvent.ACTION_UP:
+				endTime = System.currentTimeMillis();
+				c = morseDurationResolver.getSymbolFromDuration(endTime - startTime); //TODO: change method
+				//TODO: handle this
+				break;
+			default:
+				c = morseDurationResolver.getSymbolFromDuration(endTime - startTime);
+				//TODO: handle this
+				break;
+		}
+
+		return true;
 	}
 }
