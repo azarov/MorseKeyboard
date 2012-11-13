@@ -43,7 +43,7 @@ public class MorseTranslator {
             }
             if (valid) {
                 try {
-                    table.put(code, context.getResources().getString((Integer)field.get(null)));
+                    table.put(code.replaceAll("p", ".").replaceAll("d", "-"), context.getResources().getString((Integer)field.get(null)));
                 } catch (IllegalAccessException e) {
                     e.printStackTrace();
                 }
