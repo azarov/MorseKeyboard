@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Morse RU Code -->
+    <string name="pd">а</string>
+    <string name="dppp">б</string>
+    <string name="pdd">в</string>
+    <string name="ddp">г</string>
+    <string name="dpp">д</string>
+    <string name="p">е</string>
+    <string name="pppd">ж</string>
+    <string name="ddpp">з</string>
+    <string name="pp">и</string>
+    <string name="pddd">й</string>
+    <string name="dpd">к</string>
+    <string name="pdpp">л</string>
+    <string name="dd">м</string>
+    <string name="dp">н</string>
+    <string name="ddd">о</string>
+    <string name="pddp">п</string>
+    <string name="pdp">р</string>
+    <string name="ppp">с</string>
+    <string name="d">т</string>
+    <string name="ppd">у</string>
+    <string name="ppdp">ф</string>
+    <string name="pppp">х</string>
+    <string name="dpdp">ц</string>
+    <string name="dddp">ч</string>
+    <string name="dddd">ш</string>
+    <string name="ddpd">щ</string>
+    <string name="dpdd">ы</string>
+    <string name="dppd">ь</string>
+    <string name="ppdpp">э</string>
+    <string name="ppdd">ю</string>
+    <string name="pdpd">я</string>
+
+    <string name="pdddd">1</string>
+    <string name="ppddd">2</string>
+    <string name="pppdd">3</string>
+    <string name="ppppd">4</string>
+    <string name="ppppp">5</string>
+    <string name="dpppp">6</string>
+    <string name="ddppp">7</string>
+    <string name="dddpp">8</string>
+    <string name="ddddp">9</string>
+    <string name="ddddd">0</string>
+    <string name="pddddp">\</string>
+    <string name="pddpdp">\@</string>
+    <string name="dddppp">:</string>
+    <string name="ddppdd">,</string>
+    <string name="pppdppd">$</string>
+    <string name="dpppd">=</string>
+    <string name="dpdpdd">!</string>
+    <string name="dppppd">-</string>
+    <string name="dpddp">(</string>
+    <string name="dpddpd">)</string>
+    <string name="pdpdpd">.</string>
+    <string name="pdpdp">+</string>
+    <string name="ppddpp">\?</string>
+    <string name="dpdpdp">;</string>
+    <string name="dppdp">/</string>
+    <string name="ppddpd">_</string>
+
+
+</resources>
