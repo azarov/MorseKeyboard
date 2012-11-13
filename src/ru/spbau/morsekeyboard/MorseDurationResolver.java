@@ -22,4 +22,20 @@ public class MorseDurationResolver {
         }
     }
 
+    public Character onRelease(Long duration) {
+        if (duration <= dotDuration) {
+            if (duration > (dotDuration - dotDuration/10)) {
+                dotDuration += dotDuration/10;
+            } else if (duration < dotDuration/10) {
+                dotDuration -= dotDuration/10;
+            }
+            return '.';
+        } else {
+            if (duration < (dotDuration + dotDuration/10)) {
+                dotDuration -= dotDuration/10;
+            }
+            return '-';
+        }
+    }
+
 }
