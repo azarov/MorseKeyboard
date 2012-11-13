@@ -1,11 +1,12 @@
 package ru.spbau.morsekeyboard;
 
-import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -29,35 +30,33 @@ public class MorseTableItemAdapter extends BaseAdapter{
 		inflater = LayoutInflater.from(context);
 	}
 
-	@Override
 	public int getCount() {
 		return codes.size();
 	}
 
-	@Override
-	public Object getItem(int i) {
-		return null;  //To change body of implemented methods use File | Settings | File Templates.
+	public Object getItem(int arg0) {
+		return null;
 	}
 
-	@Override
-	public long getItemId(int i) {
-		return 0;  //To change body of implemented methods use File | Settings | File Templates.
+	public long getItemId(int position) {
+		return 0;
 	}
 
-	@Override
-	public View getView(int i, View view, ViewGroup viewGroup) {
-		View row = view;
-
+	public View getView(int position, View convertView, ViewGroup parent) {
+		View row = convertView;
+		
 		if (row == null) {
 			row = inflater.inflate(R.layout.table_item, null, false);
 		}
 
 		TextView code = (TextView)row.findViewById(R.id.morse_code);
 		TextView symbol = (TextView)row.findViewById(R.id.morse_symbol);
-		code.setText(codes.get(i));
-		symbol.setText(symbols.get(i));
+
+		code.setText(codes.get(position));
+		symbol.setText(symbols.get(position));
 
 
 		return row;
 	}
+
 }

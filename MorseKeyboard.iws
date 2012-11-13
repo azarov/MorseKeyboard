@@ -84,46 +84,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="about.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AboutActivityTest/res/layout/about.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AboutActivityTest/src/ru/spbau/morsekeyboard/MyActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MorseTableItemAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AboutActivityTest/src/ru/spbau/morsekeyboard/MorseTableItemAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="19" selection-start="1234" selection-end="1549" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AboutActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/spbau/morsekeyboard/AboutActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MorseTableItemAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MorseTableItemAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="48" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0">
+            <state line="28" column="0" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MorseButtonTouchListener.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MorseButtonTouchListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="9" selection-start="982" selection-end="982" vertical-scroll-proportion="0.8236715">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MorseDurationResolver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MorseDurationResolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -138,13 +122,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MyActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="36" selection-start="720" selection-end="720" vertical-scroll-proportion="0.65185183">
+            <state line="24" column="36" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MorseKeyboardView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MorseKeyboardView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="94" selection-start="2566" selection-end="2566" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MorseKeyBoardFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MorseKeyBoardFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="30" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MorseTranslator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MorseTranslator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="13" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -153,15 +164,6 @@
         <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="2" column="26" selection-start="69" selection-end="77" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Instrumentation.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/app/Instrumentation.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="16" selection-start="6167" selection-end="6167" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -203,8 +205,10 @@
         <option value="$PROJECT_DIR$/AboutActivityTest/src/ru/spbau/morsekeyboard/MyActivity.java" />
         <option value="$PROJECT_DIR$/AboutActivityTest/res/layout/about.xml" />
         <option value="$PROJECT_DIR$/AboutActivityTest/src/ru/spbau/morsekeyboard/MorseTableItemAdapter.java" />
-        <option value="$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MorseTableItemAdapter.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MorseTableItemAdapter.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/morsekeyboard/DurationButton.java" />
+        <option value="$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MorseButtonTouchListener.java" />
       </list>
     </option>
   </component>
@@ -315,6 +319,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MorseKeyboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MorseKeyboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -324,9 +342,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.31833333" />
     <property name="recentsLimit" value="5" />
@@ -595,7 +613,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24946581" sideWeight="0.67160773" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32839224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32839224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Android Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.331813" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -698,31 +716,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MorseKeyboard.iws">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="14" selection-start="2945" selection-end="2945" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/widget/AbsListView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="0" selection-start="9178" selection-end="9178" vertical-scroll-proportion="0.7591241" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AboutActivityTest/gen/ru/spbau/morsekeyboard/BuildConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AboutActivityTest/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="44" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AboutActivityTest/res/layout/input.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -748,11 +741,6 @@
         <state line="21" column="0" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MorseTableItemAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="48" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="18" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" />
@@ -775,7 +763,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="36" selection-start="720" selection-end="720" vertical-scroll-proportion="0.65185183">
+        <state line="24" column="36" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MorseKeyBoardFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="30" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MorseTranslator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MorseTableItemAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MorseKeyboardView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="94" selection-start="2566" selection-end="2566" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MorseDurationResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/spbau/morsekeyboard/MorseButtonTouchListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="9" selection-start="982" selection-end="982" vertical-scroll-proportion="0.8236715">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -822,7 +854,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.6</last-edited>
+          <last-edited>Android 2.3.3 Platform</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -834,7 +866,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>MorseKeyboard</last-edited>
+          <last-edited>Android|MorseKeyboard</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

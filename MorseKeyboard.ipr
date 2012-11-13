@@ -5,9 +5,6 @@
   </component>
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
-    <excludeFromCompile>
-      <directory url="file://$PROJECT_DIR$/gen" includeSubdirectories="true" />
-    </excludeFromCompile>
     <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="?*.properties" />
@@ -174,6 +171,13 @@
     <library name="android-support-v4">
       <CLASSES>
         <root url="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="maps">
+      <CLASSES>
+        <root url="jar://C:/Program Files (x86)/Android/android-sdk/add-ons/addon-google_apis-google-10/libs/maps.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />
