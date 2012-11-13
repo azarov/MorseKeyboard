@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="autocap"
+        android:persistent="true"
+        android:summary="@string/autocap_summary"
+        android:title="@string/autocap" />
+
+    <org.pocketworkstation.pckeyboard.AutoSummaryListPreference
+        android:defaultValue=".-.-"
+        android:entries="@array/newline_labels"
+        android:entryValues="@array/newline_values"
+        android:key="newline"
+        android:persistent="true"
+        android:title="@string/newline" />
+    
+    <CheckBoxPreference 
+        android:defaultValue="false"
+        android:key="enableutilkbd"
+        android:persistent="true"
+        android:summary="@string/enableutilkbd_summary"
+        android:title="@string/enableutilkbd"
+        />
+
+</PreferenceScreen>
