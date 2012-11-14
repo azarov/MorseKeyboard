@@ -8,6 +8,10 @@
         Nothing complicated. On large buttons dots and dashes you never miss.(Click description to close)
         </string>
 
+    <string name="morse_table_header_letters">Letters</string>
+    <string name="morse_table_header_digits">Digits</string>
+    <string name="morse_table_header_symbols">Symbols</string>
+
     <string name="caps_lock_off">abc</string>
     <string name="caps_lock_next">Abc</string>
     <string name="caps_lock_all">ABC</string>

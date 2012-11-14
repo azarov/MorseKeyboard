@@ -13,10 +13,10 @@ import java.util.Hashtable;
  * User: DimaTWL
  * Date: 11/12/12
  * Time: 3:36 PM
- * To change this template use File | Settings | File Templates.
+ *
  */
 public class MorseTranslator {
-    private Hashtable<String, String> table = new Hashtable<String, String>();
+    private static final Hashtable<String, String> table = new Hashtable<String, String>();
     private int mMaxSize = 0;
     
     public int getMax(){
