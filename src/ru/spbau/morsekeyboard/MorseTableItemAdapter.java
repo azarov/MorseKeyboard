@@ -2,11 +2,9 @@ package ru.spbau.morsekeyboard;
 
 import android.content.Context;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -54,7 +52,6 @@ public class MorseTableItemAdapter extends BaseAdapter{
 
 		code.setText(codes.get(position));
 		symbol.setText(symbols.get(position));
-
 
 		return row;
 	}

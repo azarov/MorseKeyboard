@@ -1,11 +1,12 @@
 package ru.spbau.morsekeyboard;
 
 import android.content.Context;
+import android.content.res.Resources.NotFoundException;
+import android.util.Log;
 import ru.spbau.morsekeyboard.R;
 
 import java.lang.reflect.Field;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.Hashtable;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,16 +16,21 @@ import java.util.TreeMap;
  * To change this template use File | Settings | File Templates.
  */
 public class MorseTranslator {
-    private Map<String, String> table = new TreeMap<String, String>();
-
-    public Map<String, String> getTable() {
+    private Hashtable<String, String> table = new Hashtable<String, String>();
+    private int mMaxSize = 0;
+    
+    public int getMax(){
+    	return mMaxSize;
+    }
+    
+    public Hashtable<String, String> getTable() {
         return table;
     }
 
     public String getSymbol(String code) throws BadCodeException {
         String symbol = table.get(code);
         if (null == symbol) {
-            throw new BadCodeException("Unknown morse code: " + code + ".");
+            throw new BadCodeException("Unknown morse code: <<<" + code + ">>>");
         } else {
             return symbol;
         }
@@ -34,18 +40,22 @@ public class MorseTranslator {
         Field[] fields = R.string.class.getDeclaredFields();
         for (Field field : fields) {
             String code = field.getName();
+            
             Boolean valid = true;
             for (Character character : code.toCharArray()) {
                 if (!character.equals('p') && !character.equals('d')) {
-                    valid = false;
+                	valid = false;
                     break;
                 }
             }
             if (valid) {
                 try {
-                    table.put(code.replaceAll("p", ".").replaceAll("d", "-"), context.getResources().getString((Integer)field.get(null)));
-                } catch (IllegalAccessException e) {
-                    e.printStackTrace();
+                	table.put(code.replaceAll("p", ".").replaceAll("d", "-"), context.getResources().getString((Integer)field.get(null)));
+                	mMaxSize = Math.max(mMaxSize, code.length());
+                }catch(NotFoundException e){
+                	Log.d("MorseKeyboard","symbol is unsupported in this locale");
+                }catch (IllegalAccessException e) {
+                	Log.d("MorseKeyboard","fail access to resourse");
                 }
             }
         }

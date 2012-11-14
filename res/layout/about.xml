@@ -1,42 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-            android:orientation="vertical"
-        >
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
 
-    <TextView android:layout_height="wrap_content"
-            android:layout_width="fill_parent"
-            android:text="Описание"
-            android:gravity="center_horizontal"
-            android:textSize="24dp"
-            >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/descriptionLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
 
-    </TextView>
-
-   <TextView android:id="@+id/description"
-             android:layout_width="fill_parent"
-             android:layout_height="wrap_content"
-             android:text="Здесь будет пространное описание клавиатуры"
-             android:gravity="center_horizontal"
-           >
-   </TextView>
-
-    <TextView android:id="@+id/translate_table_desc"
+        <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Таблица Морзе"
             android:gravity="center_horizontal"
-            android:textSize="24dp"
-            >
-    </TextView>
+            android:text="@string/description_head"
+            android:textSize="24dp" >
+        </TextView>
 
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/About" >
+        </TextView>
 
-   <ListView android:id="@+id/translate_table"
-           android:layout_height="match_parent"
-           android:layout_width="fill_parent"
-           >
+        <TextView
+            android:id="@+id/translate_table_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/morse_code_list"
+            android:textSize="24dp" >
+        </TextView>
+    </LinearLayout>
 
-   </ListView>
+    <ListView
+        android:id="@+id/translate_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#0000"
+        android:divider="#000"
+        android:fadeScrollbars="false"
+        android:scrollbars="none"
+        android:scrollingCache="false" 
+        android:clickable="false">
+    </ListView>
+
 </LinearLayout>

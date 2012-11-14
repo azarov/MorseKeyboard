@@ -1,4 +1,4 @@
-package ru.spbau.morsekeyboard;
+package ru.spbau.morsekeyboard.keyboard;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -7,6 +7,9 @@ import android.inputmethodservice.Keyboard;
 
 public class DotDashKeyboard extends Keyboard {
 
+	private Key spaceKey;
+	private Key capsLockKey;
+	
 	public DotDashKeyboard(Context context, int xmlLayoutResId) {
 		super(context, xmlLayoutResId);
 	}
@@ -17,13 +20,9 @@ public class DotDashKeyboard extends Keyboard {
 				horizontalPadding);
 	}
 
-	private Key spaceKey;
-	private Key capsLockKey;
-
-	@Override
+		@Override
 	protected Key createKeyFromXml(Resources res, Row parent, int x, int y,
 			XmlResourceParser parser) {
-		// TODO Auto-generated method stub
 		Key k = super.createKeyFromXml(res, parent, x, y, parser);
 		if (k.codes[0] == 62) {
 			spaceKey = k;

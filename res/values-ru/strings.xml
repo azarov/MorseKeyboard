@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <string name="app_name">Морзе-Клавиатура</string>
+    <string name="caps_lock_off">абв</string>
+    <string name="caps_lock_next">Абв</string>
+    <string name="caps_lock_all">АБВ</string>
+    <!-- About -->
+    <string name="About">Type the symbols of dots and dashes of the letters of the English alphabet.
+        When the desired character is typed, wait a moment and the symbol will be displayed in the input field.
+        Nothing complicated. On large buttons dots and dashes you never miss.</string>
     <!-- Morse RU Code -->
     <string name="pd">а</string>
     <string name="dppp">б</string>
@@ -44,7 +51,8 @@
     <string name="dddpp">8</string>
     <string name="ddddp">9</string>
     <string name="ddddd">0</string>
-    <string name="pddddp">\</string>
+    <string name="pddddp">\'</string>
+    <string name="pdppdp">\"</string>
     <string name="pddpdp">\@</string>
     <string name="dddppp">:</string>
     <string name="ddppdd">,</string>
@@ -60,6 +68,7 @@
     <string name="dpdpdp">;</string>
     <string name="dppdp">/</string>
     <string name="ppddpd">_</string>
-
+    <string name="description_head">Описание</string>
+    <string name="morse_code_list">Таблица кодов Морзе</string>
 
 </resources>
