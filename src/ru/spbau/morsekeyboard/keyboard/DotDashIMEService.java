@@ -4,6 +4,7 @@ import android.content.Context;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
+import android.media.ToneGenerator;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -39,6 +40,8 @@ public class DotDashIMEService extends InputMethodService implements
 	private static final int AUTO_CAP_SENTENCE_ENDED = 1;
 	private Integer autoCapState = AUTO_CAP_MIDSENTENCE;
 
+    private ToneGenerator toneGenerator = new ToneGenerator(1, 100);
+
 	@Override
 	public void onInitializeInterface() {
 		super.onInitializeInterface();
@@ -72,7 +75,7 @@ public class DotDashIMEService extends InputMethodService implements
 	 * @param keyCodes
 	 */
 	public void onKeyMorse(int primaryCode, int[] keyCodes) {
-		Log.d(TAG, "primaryCode: " + charInProgress.toString());
+		Log.d(TAG, "primaryCode: " + primaryCode);
 		String curCharMatch = null;
 		try {
 			curCharMatch = mMorseTranslator.getSymbol(charInProgress.toString());
@@ -89,6 +92,7 @@ public class DotDashIMEService extends InputMethodService implements
 			
 			break;
 		case 2:
+            toneGenerator.stopTone();
 			if (charInProgress.length() < mMorseTranslator.getMax()) {
 				charInProgress.append(inputView.getCode());
 			}
@@ -289,8 +293,24 @@ public class DotDashIMEService extends InputMethodService implements
 		updateSpaceKey(true);
 	}
 	
-	public void onPress(int arg0) {}
-	public void onRelease(int arg0) {}
+	public void onPress(int arg0) {
+        if(arg0 == 0){
+            toneGenerator.startTone(16, 50);
+        }
+        if(arg0 == 1){
+            toneGenerator.startTone(16, 200);
+        }
+        if(arg0 == 2){
+            toneGenerator.startTone(16);
+        }
+    }
+
+	public void onRelease(int arg0) {
+        if(arg0 == 2){
+            toneGenerator.stopTone();
+        }
+    }
+
 	public void onText(CharSequence arg0) {}
 	public void swipeDown() {}
 	public void swipeLeft() {}
