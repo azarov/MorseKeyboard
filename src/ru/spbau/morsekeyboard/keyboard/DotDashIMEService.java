@@ -225,7 +225,7 @@ public class DotDashIMEService extends InputMethodService implements
 
         if(text.length() > 0){
             Toast toast = Toast.makeText(getApplicationContext(),
-                    text, Toast.LENGTH_LONG);
+                    text, Toast.LENGTH_SHORT);
             toast.show();
         }
     }
