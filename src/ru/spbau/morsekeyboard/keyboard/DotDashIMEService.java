@@ -93,13 +93,14 @@ public class DotDashIMEService extends InputMethodService implements
 			if (charInProgress.length() < mMorseTranslator.getMax()) {
 				charInProgress.append(primaryCode == 1 ? "-" : ".");
 			}
-			
+            createHint(charInProgress.toString());
 			break;
 		case 2:
             toneGenerator.stopTone();
 			if (charInProgress.length() < mMorseTranslator.getMax()) {
 				charInProgress.append(inputView.getCode());
 			}
+            createHint(charInProgress.toString());
 			Log.d(TAG, "charInProgress: " + charInProgress.toString());
 			break;
 		// Space button ends the current dotdash sequence
@@ -232,7 +233,6 @@ public class DotDashIMEService extends InputMethodService implements
 	public void updateSpaceKey(boolean refreshScreen) {
 		if (!spaceKey.label.toString().equals(charInProgress.toString())) {
 			spaceKey.label = charInProgress.toString();
-
 			if (refreshScreen) {
 				try {
 					inputView.invalidateAllKeys();
@@ -240,8 +240,6 @@ public class DotDashIMEService extends InputMethodService implements
 					iae.printStackTrace();
 				}
 			}
-
-            createHint(charInProgress.toString());
 		}
 	}
 
