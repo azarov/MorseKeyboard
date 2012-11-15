@@ -10,9 +10,12 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 
+import android.widget.Toast;
 import ru.spbau.morsekeyboard.BadCodeException;
 import ru.spbau.morsekeyboard.MorseTranslator;
 import ru.spbau.morsekeyboard.R;
+
+import java.util.List;
 
 public class DotDashIMEService extends InputMethodService implements
 		KeyboardView.OnKeyboardActionListener{
@@ -203,9 +206,22 @@ public class DotDashIMEService extends InputMethodService implements
 		}
 	}
 
+    public void createHint(String code){
+        List<String> hintList = mMorseTranslator.getHintSymbolList(code);
+        StringBuilder text = new StringBuilder("");
+        for(String symbol : hintList){
+            text.append(symbol + " ");
+        }
+
+        Toast toast = Toast.makeText(getApplicationContext(),
+                text, Toast.LENGTH_LONG);
+        toast.show();
+    }
+
 	public void updateSpaceKey(boolean refreshScreen) {
 		if (!spaceKey.label.toString().equals(charInProgress.toString())) {
 			spaceKey.label = charInProgress.toString();
+
 			if (refreshScreen) {
 				try {
 					inputView.invalidateAllKeys();
@@ -213,6 +229,8 @@ public class DotDashIMEService extends InputMethodService implements
 					iae.printStackTrace();
 				}
 			}
+
+            createHint(charInProgress.toString());
 		}
 	}
 

@@ -6,7 +6,10 @@ import android.util.Log;
 import ru.spbau.morsekeyboard.R;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.Hashtable;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -34,6 +37,18 @@ public class MorseTranslator {
         } else {
             return symbol;
         }
+    }
+
+    public List<String> getHintSymbolList(String code) {
+        List<String> symbolList = new ArrayList<String>();
+
+        for (Enumeration<String> keys = table.keys(); keys.hasMoreElements();) {
+            String nextElement = keys.nextElement();
+            if(nextElement.startsWith(code)){
+                symbolList.add(table.get(nextElement));
+            }
+        }
+        return symbolList;
     }
 
     public MorseTranslator(Context context) {
