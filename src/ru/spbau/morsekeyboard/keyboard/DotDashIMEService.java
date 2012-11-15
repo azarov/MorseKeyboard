@@ -1,5 +1,6 @@
 package ru.spbau.morsekeyboard.keyboard;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
@@ -207,15 +208,25 @@ public class DotDashIMEService extends InputMethodService implements
 	}
 
     public void createHint(String code){
+        if(code.length() == 0) return;
+
         List<String> hintList = mMorseTranslator.getHintSymbolList(code);
         StringBuilder text = new StringBuilder("");
         for(String symbol : hintList){
             text.append(symbol + " ");
         }
 
-        Toast toast = Toast.makeText(getApplicationContext(),
-                text, Toast.LENGTH_LONG);
-        toast.show();
+        //String text = hintList.toString();
+
+        /*AlertDialog.Builder hint = new AlertDialog.Builder(getApplicationContext());
+        hint.setMessage(text);
+        hint.show();*/
+
+        if(text.length() > 0){
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    text, Toast.LENGTH_LONG);
+            toast.show();
+        }
     }
 
 	public void updateSpaceKey(boolean refreshScreen) {
